@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   render() {  
     return (
-      <div>
-        <h1>Agency website</h1>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path="/" component={Header}/>
+          <Footer/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
