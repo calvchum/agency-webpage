@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Project from './Project'
 
-class Projects extends Component {
+class Project extends Component {
   render() {  
     return (
       <h1>
-        Projects
+        Project
       </h1>
     );
   }
 }
 
-export default Projects;
+export default Project;
