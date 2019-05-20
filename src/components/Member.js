@@ -5,7 +5,7 @@ class Member extends Component {
     const { name, title, img, desc } = this.props.member
     return (
       <div>
-        <img src={this.props.member.img} alt={`picture of ${name}'s mug`}/>
+        <img src={this.props.member.img} alt={`${name}'s mug`}/>
         <h1>
           {name} | {title}
         </h1>
