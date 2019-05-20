@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as data from '../constants/aboutInfo';
+import * as data from '../constants/memberInfo';
 import Member from './Member';
 
 class About extends Component {
@@ -12,7 +12,7 @@ class About extends Component {
       />
     )
   }) 
-  
+
     return (
       <div>
         <h1>
