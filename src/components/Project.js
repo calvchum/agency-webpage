@@ -7,7 +7,7 @@ class Project extends Component {
     let tags = tag.map((e)=>{
       return (
         <li>
-          <span>{e}</span>
+          {e}
         </li>
       )
     })
