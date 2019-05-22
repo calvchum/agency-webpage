@@ -1,3 +1,36 @@
-// import files with @
-@import 'burger.scss';
-@import 'header.scss';
+// colors
+$accent: #15624C;
+$main: #003E27;
+$grey: #E9E9E9;
+$charcoal: #444444;
+$off-white: #F9F9F9;
+
+// fonts-sizes
+$header: 48px;
+$subheader: 24px;
+$body: 16px;
+
+// fonts
+$header-font: 'Playfair Display', serif;
+$body-font: 'Lato', sans-serif;
+
+
+// import files with @import
+@import '_burger.scss';
+@import '_header.scss';
+@import '_footer.scss';
+
+
+// Standard text stylings
+.body-text {
+  font-size: $body;
+  font-family: $body-font;
+}
+.header-text {
+  font-size: $header;
+  font-family: $header-font;
+}
+.subheader-text {
+  font-size: $subheader;
+  font-family: $header-font;
+}
