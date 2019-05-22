@@ -2,14 +2,14 @@
   z-index: 1;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100%;
   width: 350px;
   background-color: yellow;
   display: flex;
   flex-direction: column;
   border-left: 1px solid #e5e5e5;
-  transform: translateX(110%);
+  transform: translateX(-110%);
   transition: transform 0.15s ease-in-out;
 }
 
