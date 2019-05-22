@@ -5,6 +5,7 @@ class Header extends Component {
   render() {  
     return (
       <div>
+        <button onClick={this.props.handleBurgerOpen}> click me</button>
         <h1>
           Header
         </h1>
