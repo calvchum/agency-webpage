@@ -51,7 +51,11 @@ class App extends Component {
           <Route exact path="/about/" component={About}/>
           <Route exact path="/contacts/" component={Contacts}/>
           <Route exact path="/projects/" component={Projects}/>
-          <Burger/>
+          <Burger
+            handleBurgerOpen={this.handleBurgerOpen}
+            handleBurgerClose={this.handleBurgerClose}
+            isBurgerOpen={this.state.isBurgerOpen}          
+          />
           <Footer/>
         </div>
       </BrowserRouter>

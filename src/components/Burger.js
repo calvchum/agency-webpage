@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
+import * as data from '../constants/menuItems.js';
+import { Link } from 'react-router-dom';
 
 class Burger extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
+    let menuLinks = data.menuItems.map((item, i) => {
+      return (
+        <Link to={item.link} key={i}>
+          <li key={i}>{item.title}</li>
+        </Link>
+      )
+    })
+
     return (
       <div className={`Burger ${this.props.isBurgerOpen ? 'Burger--open' : ''}`}>
         <header className="Burger__header">
@@ -17,10 +24,7 @@ class Burger extends Component {
         </header>
         <div>
           <ul>
-            <li>Projects</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
+            {menuLinks}
           </ul>
         </div>
       </div>
