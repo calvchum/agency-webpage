@@ -1,24 +1,19 @@
 import React, {Component} from 'react';
 
-class Cart extends Component {
+class Burger extends Component {
   constructor(props) {
     super(props);
 
     this.openCheckout = this.openCheckout.bind(this);
   }
 
-  openCheckout() {
-    window.open(this.props.checkout.webUrl);
-  }
-
   render() {
     return (
-      <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
-        <header className="Cart__header">
-          <h2>Your cart</h2>
+      <div className={`Burger ${this.props.isBurgerOpen ? 'Burger--open' : ''}`}>
+        <header className="Burger__header">
           <button
-            onClick={this.props.handleCartClose}
-            className="Cart__close">
+            onClick={this.props.handleBurgerClose}
+            className="Burger__close">
             ×
           </button>
         </header>
@@ -35,4 +30,4 @@ class Cart extends Component {
   }
 }
 
-export default Cart;
+export default Burger;
