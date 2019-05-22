@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render() {  
     return (
       <div>
-        <button onClick={this.props.handleBurgerOpen}> click me</button>
         <h1>
+        <button onClick={this.props.handleBurgerOpen}> 🍔 </button>
           Header
         </h1>
-        <Link to="/">
-          <span>Home</span>
-        </Link>
-        <Link to="/about">
-          <span>About</span>
-        </Link>
-        <Link to="/contact">
-          <span>Contact</span>
-        </Link>
-        <Link to="/projects">
-          <span>Projects</span>
-        </Link>
       </div>
     );
   }
