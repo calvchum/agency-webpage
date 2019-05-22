@@ -6,6 +6,7 @@ import Footer from './Footer';
 import About from './About';
 import Contacts from './Contacts';
 import Projects from './Projects';
+import Services from './Services';
 import Burger from './Burger';
 
 class App extends Component {
@@ -51,6 +52,7 @@ class App extends Component {
           <Route exact path="/about/" component={About}/>
           <Route exact path="/contacts/" component={Contacts}/>
           <Route exact path="/projects/" component={Projects}/>
+          <Route exact path="/services/" component={Services}/>
           <Burger
             handleBurgerOpen={this.handleBurgerOpen}
             handleBurgerClose={this.handleBurgerClose}
