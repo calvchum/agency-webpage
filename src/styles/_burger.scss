@@ -1,3 +1,31 @@
-.background {
-  background-color: red;
+.Burger {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e5e5e5;
+  transform: translateX(-110%);
+  transition: transform 0.15s ease-in-out;
 }
+
+.Burger--open {
+  transform: translateX(0);
+}
+
+.Burger__close {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  font-size: 35px;
+  color: #999;
+  border: none;
+  background: transparent;
+  transition: transform 100ms ease;
+  cursor: pointer;
+}
+

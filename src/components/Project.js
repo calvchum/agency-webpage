@@ -4,9 +4,9 @@ class Project extends Component {
   render() {  
     const { name, img, desc, tag } = this.props.project
 
-    let tags = tag.map((e)=>{
+    let tags = tag.map((e, i)=>{
       return (
-        <li>
+        <li key={i}>
           {e}
         </li>
       )
