@@ -8,7 +8,7 @@ class Burger extends Component {
     let menuLinks = data.menuItems.map((item, i) => {
       return (
         <Link to={item.link} key={i}>
-          <li key={i}>{item.title}</li>
+          <li key={i} onClick={this.props.handleBurgerClose}>{item.title}</li>
         </Link>
       )
     })
