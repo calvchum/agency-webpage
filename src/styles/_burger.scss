@@ -1,30 +1,93 @@
-.Burger {
+// BURGER MENU INACTIVE
+#hamburger-menu-icon {
+  position: fixed;
+  z-index: 1;
+  width: 102px;
+  height: 102px;
+  background: $accent;
+  border: none;
+  outline: none;
+}
+#hamburger-menu-icon span {
+  position: absolute;
+  margin: 10px;
+  height: 3px;
+  background: $grey;
+  transform: rotate(0deg);
+  transition: .2s ease-in-out;
+}
+#hamburger-menu-icon span:nth-child(1) {
+  width: 56px;
+  top: 32px;
+  left: 16px;
+} 
+#hamburger-menu-icon span:nth-child(2) {
+  width: 40px;
+  top: 48px;
+  left: 16px;
+} 
+
+// BURGER MENU ACTIVE
+#hamburger-menu-icon.active {
+  background: $off-white;
+  & span {
+    background: $charcoal;
+  }
+  & span:nth-child(1) {
+    width: 32px;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 24px;
+  } 
+  & span:nth-child(2) {
+    width: 32px;
+    transform: rotate(-45deg);
+    top: 40px;
+    left: 24px;
+  } 
+}
+
+// TRANSITIONS AND STYLING OF BURGER MENU 
+.burger-slide-out {
   z-index: 1;
   position: fixed;
-  top: 0;
+  top: 102px;
   left: 0;
-  height: 100%;
-  width: 350px;
-  background-color: white;
+  height: calc(100vh - 102px);
+  width: 300px;
   display: flex;
+  background: $off-white;
   flex-direction: column;
-  border-left: 1px solid #e5e5e5;
   transform: translateX(-110%);
   transition: transform 0.15s ease-in-out;
 }
+.burger-menu-links-wrapper {
+  padding: 48px 0px 0px 48px;
 
-.Burger--open {
+}
+.burger-menu-links {
+  color: $charcoal;
+  list-style: none !important;
+  padding: 0px;
+  & li {
+    color: $charcoal;
+    height: 48px;
+  }
+  & li:hover {
+    color: #000000;
+  }
+  & a:hover {
+    text-decoration: none;
+  }
+}
+.burger-open {
   transform: translateX(0);
 }
-
-.Burger__close {
-  position: absolute;
-  right: 9px;
-  top: 8px;
-  font-size: 35px;
+.burger-close {
+  height: calc(100vh - 102px);
   color: #999;
   border: none;
-  background: transparent;
+  background: $off-white;
   transition: transform 100ms ease;
   cursor: pointer;
 }

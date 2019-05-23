@@ -34,3 +34,6 @@ $body-font: 'Lato', sans-serif;
   font-size: $subheader;
   font-family: $header-font;
 }
+.no-scroll {
+  overflow: hidden;
+}

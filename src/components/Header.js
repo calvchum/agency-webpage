@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Header extends Component {
   render() {  
     return (
-      <div className='header-container'>
-        <h1>
-        <button onClick={this.props.handleBurgerOpen}> 🍔 </button>
-          Header
-        </h1>
-      </div>
+
+      <Row>
+        <Col className='header-container'>
+          <button id="hamburger-menu-icon" className={this.props.isBurgerOpen ? 'active' : ''} onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
+          <div className="header-positioning">
+            <p className="header-text">agency name.</p>
+          </div>
+        </Col>
+      </Row>
     );
   }
 }

@@ -8,22 +8,15 @@ class Burger extends Component {
     let menuLinks = data.menuItems.map((item, i) => {
       return (
         <Link to={item.link} key={i}>
-          <li key={i} onClick={this.props.handleBurgerClose}>{item.title}</li>
+          <li key={i} onClick={this.props.isBurgerOpen}>{item.title}</li>
         </Link>
       )
     })
 
     return (
-      <div className={`Burger ${this.props.isBurgerOpen ? 'Burger--open' : ''}`}>
-        <header className="Burger__header">
-          <button
-            onClick={this.props.handleBurgerClose}
-            className="Burger__close">
-            ×
-          </button>
-        </header>
-        <div>
-          <ul>
+      <div className={`burger-slide-out ${this.props.isBurgerOpen ? 'burger-open' : 'burger-close'}`}>
+        <div className='burger-menu-links-wrapper'>
+          <ul className='subheader-text burger-menu-links'>
             {menuLinks}
           </ul>
         </div>

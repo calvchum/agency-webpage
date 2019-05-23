@@ -1,5 +1,13 @@
 .header-container {  
-  background: white;
-  min-width: 100%;
-  height: 122px;
+  background: $main;
+  height: 102px;
+}
+
+.header-positioning {
+  color: $off-white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
