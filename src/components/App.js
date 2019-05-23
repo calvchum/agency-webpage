@@ -14,8 +14,8 @@ class App extends Component {
     super();
     this.state = {
       isBurgerOpen: false,
-      currentPage: ''
     }
+
     this.handleBurgerOpen = this.handleBurgerOpen.bind(this)
     this.noScroll = this.noScroll.bind(this)
   }
