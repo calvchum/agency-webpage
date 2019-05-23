@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     title: 'Projects',
-    link: '/projects/'
+    link: '/projects'
   },
   {
     title: 'About',
@@ -9,7 +9,7 @@ export const menuItems = [
   },
   {
     title: 'Contact',
-    link: '/contact/'
+    link: '/contacts'
   },
   {
     title: 'Services',

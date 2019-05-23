@@ -14,6 +14,7 @@ class App extends Component {
     super();
     this.state = {
       isBurgerOpen: false,
+      currentPage: ''
     }
     this.handleBurgerOpen = this.handleBurgerOpen.bind(this)
     this.noScroll = this.noScroll.bind(this)
@@ -59,10 +60,10 @@ class App extends Component {
         <div>
           <Route path="/" render={renderHeader}/>
           <Route exact path="/" component={Landing}/>
-          <Route exact path="/about/" component={About}/>
-          <Route exact path="/contacts/" component={Contacts}/>
-          <Route exact path="/projects/" component={Projects}/>
-          <Route exact path="/services/" component={Services}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contacts" component={Contacts}/>
+          <Route exact path="/projects" component={Projects}/>
+          <Route exact path="/services" component={Services}/>
           <Route path="/" render={renderBurger}/>
           <Footer/>
         </div>
