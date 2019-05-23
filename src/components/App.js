@@ -43,6 +43,17 @@ class App extends Component {
       )    
     }
 
+    const renderBurger = (props) => {
+      return (
+        <Burger
+          handleBurgerOpen={this.handleBurgerOpen}
+          handleBurgerClose={this.handleBurgerClose}
+          isBurgerOpen={this.state.isBurgerOpen}          
+          {...props}
+        />
+      )
+    }
+
     return (
       <BrowserRouter>
         <div>
@@ -52,11 +63,7 @@ class App extends Component {
           <Route exact path="/contacts/" component={Contacts}/>
           <Route exact path="/projects/" component={Projects}/>
           <Route exact path="/services/" component={Services}/>
-          <Burger
-            handleBurgerOpen={this.handleBurgerOpen}
-            handleBurgerClose={this.handleBurgerClose}
-            isBurgerOpen={this.state.isBurgerOpen}          
-          />
+          <Route path="/" render={renderBurger}/>
           <Footer/>
         </div>
       </BrowserRouter>
