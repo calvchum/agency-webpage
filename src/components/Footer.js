@@ -5,28 +5,30 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class Footer extends Component {
   render() {  
+
+  {/* NAVIGATION LINKS */}
     let menuLinks = data.menuItems.map((item, i) => {
       return (
-        <Link to={item.link} key={i}>
-          <li className="footer-link-item" key={i}>{item.title} / </li>
+        <Link to={item.link} className="body-text footer-link-item" key={i}>
+          <li key={i}> {item.title} </li>
+          <div> / </div>
         </Link>
       )
     })
 
     return (
-      <Container>
-        <Row>
-          <Col>
+        <Row className="footer-container">
+    {/* RENDERING NAVIGATION LINKS */}
+          <Col className="footer-content-align" xs="12" md="6" lg="6">
             <ul className="footer-navigation">
               {menuLinks}
             </ul>
           </Col>
-
-          <Col>
-            
+    {/* COPYRIGHT */}
+          <Col className="footer-content-align copyright-justify-content" xs="12" md="6" lg="6">
+            <p className="body-text ">Copyright 2019 Agency Name</p>
           </Col>
         </Row>
-      </Container>
     );
   }
 }
