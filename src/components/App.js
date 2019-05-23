@@ -25,6 +25,7 @@ class App extends Component {
     })
     this.noScroll()
   }
+
   noScroll() {
     this.state.isBurgerOpen ? document.querySelector('body').classList.remove('no-scroll') : document.querySelector('body').classList.add('no-scroll');
   }
