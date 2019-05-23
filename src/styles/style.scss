@@ -1,27 +1,27 @@
-// colors
+// COLORS
 $accent: #15624C;
 $main: #003E27;
 $grey: #E9E9E9;
 $charcoal: #444444;
 $off-white: #F9F9F9;
 
-// fonts-sizes
+// FONTS-SIZES
 $header: 48px;
 $subheader: 24px;
 $body: 16px;
 
-// fonts
+// FONTS
 $header-font: 'Playfair Display', serif;
 $body-font: 'Lato', sans-serif;
 
 
-// import files with @import
+// IMPORT FILES WITH @IMPORT
 @import '_burger.scss';
 @import '_header.scss';
 @import '_footer.scss';
 
 
-// Standard text stylings
+// STANDARD TEXT STYLINGS
 .body-text {
   font-size: $body;
   font-family: $body-font;
@@ -34,6 +34,7 @@ $body-font: 'Lato', sans-serif;
   font-size: $subheader;
   font-family: $header-font;
 }
+// ADDED TO BODY WHEN BURGER MENU OPEN
 .no-scroll {
   overflow: hidden;
 }
