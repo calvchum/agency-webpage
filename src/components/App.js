@@ -15,6 +15,7 @@ class App extends Component {
     this.state = {
       isBurgerOpen: false,
     }
+
     this.handleBurgerOpen = this.handleBurgerOpen.bind(this)
     this.noScroll = this.noScroll.bind(this)
   }
@@ -43,20 +44,27 @@ class App extends Component {
       )    
     }
 
+    const renderBurger = (props) => {
+      return (
+        <Burger
+          handleBurgerOpen={this.handleBurgerOpen}
+          handleBurgerClose={this.handleBurgerClose}
+          isBurgerOpen={this.state.isBurgerOpen}          
+          {...props}
+        />
+      )
+    }
+
     return (
       <BrowserRouter>
         <div>
           <Route path="/" render={renderHeader}/>
           <Route exact path="/" component={Landing}/>
-          <Route exact path="/about/" component={About}/>
-          <Route exact path="/contacts/" component={Contacts}/>
-          <Route exact path="/projects/" component={Projects}/>
-          <Route exact path="/services/" component={Services}/>
-          <Burger
-            handleBurgerOpen={this.handleBurgerOpen}
-            handleBurgerClose={this.handleBurgerClose}
-            isBurgerOpen={this.state.isBurgerOpen}          
-          />
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contacts" component={Contacts}/>
+          <Route exact path="/projects" component={Projects}/>
+          <Route exact path="/services" component={Services}/>
+          <Route path="/" render={renderBurger}/>
           <Footer/>
         </div>
       </BrowserRouter>
