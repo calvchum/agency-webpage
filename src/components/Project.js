@@ -4,20 +4,24 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class Project extends Component {
   render() {  
-    const { name, img, desc, tag } = this.props.project
+    const { name, img, desc, tag, medium } = this.props.project
 
-    let tags = tag.map((e, i)=>{
-      return (
-        <span  key={i}>
-          {e} /<span> </span> 
-        </span>
-      )
-    })
+    let tags = []
+
+    tags.push(tag.slice(0, -1).map((e, i)=>{
+          return (
+            <span  key={i}>
+              {e} /<span> </span> 
+            </span>
+          )
+        }))
+
+    tags.push(tag.slice(-1))
 
     return (
       <div className="link-wrapper">
     {/* Calv can you make the information object include a link to a medium artcile to go in the href */}
-        <a href="#" target='_blank'>
+        <a href={medium.frontend} target='_blank'>
           <Row className="project-wrapper" style={{backgroundImage: `url(${img})`}}>
             <Col className="display-none project-content-alignment">
               <div className="project-header">
