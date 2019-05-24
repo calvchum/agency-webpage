@@ -63,7 +63,9 @@
 }
 .burger-menu-links-wrapper {
   padding: 48px 0px 0px 48px;
-
+}
+.burger-menu-links-wrapper ul a:hover {
+  text-decoration: none;
 }
 .burger-menu-links {
   color: $charcoal;
@@ -72,12 +74,13 @@
   & li {
     color: $charcoal;
     height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 8px;
   }
   & li:hover {
     color: #000000;
-  }
-  & a:hover {
-    text-decoration: none;
+    text-decoration:none;
   }
 }
 .burger-open {
@@ -91,8 +94,23 @@
   transition: transform 100ms ease;
   cursor: pointer;
 }
-
+// STYLING FOR THE ACTIVE LINK 
 .burger-menu-highlighted {
-  color: $main;
-  font-weight: bold
+  list-style: none !important;
+  padding: 0px;
+  & li {
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 48px;
+  }
+  & .active-rectangle {
+    width: 8px;
+    position: relative;
+    left: -88px;
+    height: 100%;
+    background-color: $accent;
+  }
 }
+
+
