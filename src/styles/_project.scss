@@ -1,0 +1,35 @@
+.project-wrapper {
+  width: 988px;
+  height: 488px;
+  margin-bottom: 16px;
+}
+.project-info {
+  position: absolute;
+  bottom: 16px;
+  left: 32px;
+  max-width: 60%;
+}
+.display-none {
+  opacity: 0;
+  transition: 0.2s ease-in;
+  background-color: rgba(233, 233, 233, 0.8);
+  &:hover {
+    background-color: rgba(233, 233, 233, 0.8);
+    opacity: 1;
+  }
+}
+.project-content-alignment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 56px;
+}
+.link-wrapper a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+
+  }
+}
