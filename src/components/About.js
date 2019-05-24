@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import * as data from '../constants/memberInfo';
 import Member from './Member';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 class About extends Component {
   render() { 
@@ -14,12 +16,20 @@ class About extends Component {
   }) 
 
     return (
-      <div>
-        <h1>
-          About
-        </h1>
-        <ul>{members}</ul>
-      </div>
+      <Container>
+        <Row>
+          <Col xs="12" md={{ offset: 1, span: 10 }}>
+            <h1 className="subheader-text">
+              About
+            </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" md={{ offset: 1, span: 10 }}>
+            {members}
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
