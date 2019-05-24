@@ -24,8 +24,7 @@ class Projects extends Component {
         </Row>
         <Row>
           <Col xs='12' md={{ offset: '1', span: 10 }}>
-            {projects}
-            
+            {projects}       
           </Col>
         </Row>
       </Container>

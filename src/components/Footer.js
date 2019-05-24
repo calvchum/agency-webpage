@@ -7,14 +7,26 @@ class Footer extends Component {
   render() {  
 
   {/* NAVIGATION LINKS */}
-    let menuLinks = data.menuItems.map((item, i) => {
-      return (
-        <Link to={item.link} className="body-text footer-link-item" key={i}>
-          <li key={i}> {item.title} </li>
-          <div> / </div>
-        </Link>
-      )
-    })
+    let menuLinks = []
+
+    menuLinks.push(data.menuItems.slice(0, -1).map((item, i) => {
+          return (
+            <Link to={item.link} className="body-text footer-link-item" key={i}>
+              <li key={i}> {item.title} </li>
+              <div> / </div>
+            </Link>
+          )
+        }))
+
+    menuLinks.push(data.menuItems.slice(-1).map((item, i) => {
+          return (
+            <Link to={item.link} className="body-text footer-link-item" key={i}>
+              <li key={i}> {item.title} </li>
+            </Link>
+          )
+        }))
+
+    // menuLinks.push(data.menuItems.slice(-1).title)
 
     return (
         <Row className="footer-container">
