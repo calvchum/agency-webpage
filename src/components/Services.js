@@ -18,10 +18,17 @@ class Services extends Component {
     })
   }
 
+  componentDidMount() {
+    const defaultService = data.servicesData[0].category
+    this.setState({
+      displayInfo: defaultService
+    })
+  }
+
 	render() {
     let services = data.servicesData.map((service, i)=> {
       return(
-        <button key={i} onClick={() => this.handleClick(service.category)}>
+        <button className={`service-header-button ${service.category === this.state.displayInfo ? 'service-focus' : ''}`} key={i} onClick={() => this.handleClick(service.category)}>
           <li className="subheader-text" style={{display: 'inline', margin: '5px'}} key={i}>{service.header}</li>
         </button>      
       )
