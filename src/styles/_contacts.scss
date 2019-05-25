@@ -1,0 +1,29 @@
+.contact-location {
+  display: flex;
+  padding: 24px 0px;
+  & div {
+    width: 50%;
+  }
+  & img {
+    width: 98%;
+  }
+}
+
+@media (max-width: 568px) {
+  .contact-location {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    & div {
+    width: 100%;
+    padding: 16px 0px 0px 0px;
+    }
+    & div:last-child {
+      padding-bottom: 16px;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+
+}
