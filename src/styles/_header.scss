@@ -12,3 +12,29 @@
   align-items: center;
 }
 
+@media (max-width: 568px) {
+  .header-container {  
+    background: $main;
+    height: 68px;
+  }
+
+  .header-positioning {
+    color: $off-white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 568px) {
+  .header-positioning {
+    display: none;
+    // position: fixed;
+  }
+  .header-container {
+    background: $off-white;
+    // top: 0px;
+  }
+}

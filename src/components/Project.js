@@ -20,7 +20,6 @@ class Project extends Component {
 
     return (
       <div className="link-wrapper">
-    {/* Calv can you make the information object include a link to a medium artcile to go in the href */}
         <a href={medium.frontend} target='_blank'>
           <Row className="project-wrapper" style={{backgroundImage: `url(${img})`}}>
             <Col className="display-none project-content-alignment">
