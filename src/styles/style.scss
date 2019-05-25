@@ -25,12 +25,13 @@ $body-font: 'Lato', sans-serif;
 @import '_project.scss';
 @import '_about.scss';
 @import '_member.scss';
+@import '_services.scss';
 
 
-// STANDARD TEXT STYLINGS
 body {
   background: $off-white;
 }
+// STANDARD TEXT STYLINGS
 .body-text {
   font-size: $body;
   font-family: $body-font;
@@ -46,6 +47,13 @@ body {
 .page-header {
   padding: 48px 0px 24px 0px;
 
+}
+// DEFAULTS REMOVED FROM BOOTSTRAP
+.row {
+  margin: 0px 0px !important;
+}
+.col {
+  padding: 0px 0px !important;
 }
 // ADDED TO BODY WHEN BURGER MENU OPEN
 .no-scroll {
