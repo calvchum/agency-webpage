@@ -1,3 +1,7 @@
+.min-height-wrapper {
+  min-height: calc(100vh - 190px);
+  background: $off-white;
+}
 .contact-location {
   display: flex;
   padding: 24px 0px;
@@ -25,5 +29,4 @@
       width: 100%;
     }
   }
-
 }

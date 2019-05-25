@@ -16,7 +16,7 @@ class About extends Component {
   }) 
 
     return (
-      <Container>
+      <div className="min-height-wrapper">
         <Row>
           <Col xs="12" md={{ offset: 1, span: 10 }} lg={{ offset: 2, span: 8 }}>
             <h1 className="page-header subheader-text">
@@ -25,7 +25,7 @@ class About extends Component {
           </Col>
         </Row>
         {members}
-      </Container>
+      </div>
     );
   }
 }

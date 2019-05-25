@@ -60,3 +60,9 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
+@media (max-width: 568px) {
+  .header-text {
+    font-size: 32px;
+  }
+}

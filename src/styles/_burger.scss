@@ -113,4 +113,59 @@
   }
 }
 
+@media (max-width: 568px) {
+    #hamburger-menu-icon {
+    position: fixed;
+    z-index: 1;
+    width: 68px;
+    height: 68px;
+    background: $accent;
+    border: none;
+    outline: none;
+  }
+    #hamburger-menu-icon span {
+    position: absolute;
+    margin: 10px;
+    height: 3px;
+    background: $grey;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
+  }
+  #hamburger-menu-icon span:nth-child(1) {
+    width: 40px;
+    top: 16px;
+    left: 4px;
+  } 
+  #hamburger-menu-icon span:nth-child(2) {
+    width: 24px;
+    top: 32px;
+    left: 4px;
+  } 
+  .burger-slide-out {
+    z-index: 1;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    height: calc(100vh - 68px);
+  }
+  #hamburger-menu-icon.active {
+    background: $off-white;
+    & span {
+      background: $charcoal;
+    }
+    & span:nth-child(1) {
+      width: 24px;
+      transform: rotate(45deg);
+      top: 16px;
+      left: 4px;
+    } 
+    & span:nth-child(2) {
+      width: 24px;
+      transform: rotate(-45deg);
+      top: 16px;
+      left: 4px;
+    } 
+  }
+}
+
 

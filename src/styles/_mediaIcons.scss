@@ -1,4 +1,5 @@
 .social-media-wrapper {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -6,5 +7,19 @@
   top: 40vh;
   & a:first-child {
     margin-bottom: 1px;
+  }
+}
+
+@media (max-width: 568px) {
+  .social-media-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 1px;
+    right: 1px;
+    & a:first-child {
+      margin-right: 1px;
+    }
   }
 }

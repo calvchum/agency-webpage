@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 class Contacts extends Component {
   render() {  
     return (
-      <div className="contact-wrapper">
+      <div className="min-height-wrapper">
         <Row className="contact-details-wrapper">
           <Col className="contact-location" xs="12" md={{ offset: 1, span: 10 }}>
           <div>
