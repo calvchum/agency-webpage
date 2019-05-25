@@ -20,7 +20,7 @@ class Contacts extends Component {
             <span className="body-text">
             Ben Quartermaine<br/>
             +61 488 197 887<br/>
-            ben.quartermaine3@gamil.com
+            ben.quartermaine3@gmail.com
             </span>  
           </div>
           </Col>
