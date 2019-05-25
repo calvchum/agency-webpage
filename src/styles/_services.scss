@@ -1,17 +1,18 @@
 .service-header {
   display: flex;
-  & button {
+}
 
+.service-header-button {
     width: 25%;
     background: $off-white;
     border: none;
     padding: 16px 0px;
-    &:focus {
-      outline: none;
-      background: white;
-      border-bottom: 4px $main solid;
-    }
-  }
+}
+
+.service-focus {
+  outline: none;
+  background: white;
+  border-bottom: 4px $main solid;  
 }
 .service-wrapper {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
