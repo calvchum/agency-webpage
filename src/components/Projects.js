@@ -18,12 +18,12 @@ class Projects extends Component {
     return (
       <Container>
         <Row>
-          <Col xs='12' md={{ offset: '1', span: 10 }} className="page-header">
+          <Col xs='12' md={{ offset: 1, span: 10 }} className="page-header">
           <h1 className="subheader-text">Projects</h1>
           </Col>
         </Row>
         <Row>
-          <Col xs='12' md={{ offset: '1', span: 10 }}>
+          <Col xs='12' md={{ offset: 1, span: 10 }}>
             {projects}       
           </Col>
         </Row>

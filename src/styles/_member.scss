@@ -1,5 +1,29 @@
 .about-member {
   display: flex;
+  margin-bottom: 16px;
+}
+.about-member-wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin: 10px 0px;
+  padding-left: 24px;
+}
+.about-member-info {
+
+}
+.about-member-link {
+  display: flex;
+  justify-content: flex-end;
+  
+  & a {
+    color: $charcoal;
+    text-decoration: underline;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

@@ -18,17 +18,13 @@ class About extends Component {
     return (
       <Container>
         <Row>
-          <Col xs="12" md={{ offset: 1, span: 10 }}>
-            <h1 className="subheader-text">
+          <Col xs="12" md={{ offset: 1, span: 10 }} lg={{ offset: 2, span: 8 }}>
+            <h1 className="page-header subheader-text">
               About
             </h1>
           </Col>
         </Row>
-        <Row>
-          <Col xs="12" md={{ offset: 1, span: 10 }}>
-            {members}
-          </Col>
-        </Row>
+        {members}
       </Container>
     );
   }
