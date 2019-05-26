@@ -36,8 +36,26 @@
     background: $accent;
   }
 }
-
-
+.landing-term-definition {
+  width: 100%;
+  // height: 20vh;
+  padding: 20px 0px;
+}
+.landing-individual-term {
+  display: flex;
+  flex-direction: column;
+}
+.landing-quote {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.active-landing {
+    opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
 
 // POTENTIALLY FIND A BETTER SOLUTION FOR THIS, currently makes the scrolling down when clicking on the down arrow smooth. Not sure the nagatives of it.. (aside from some browser incompatibility)
 html {

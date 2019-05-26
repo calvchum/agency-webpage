@@ -27,6 +27,7 @@ $body-font: 'Lato', sans-serif;
 @import '_member.scss';
 @import '_services.scss';
 @import '_contacts.scss';
+@import '_layover.scss';
 
 
 body {
@@ -65,4 +66,14 @@ body {
   .header-text {
     font-size: 32px;
   }
+  .subheader-text {
+    font-size: 20px;
+  }
 }
+
+
+
+
+
+
+
