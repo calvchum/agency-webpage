@@ -6,15 +6,11 @@ import Layover from './Layover';
 
 class Landing extends Component {
   // Function hides the layover animation so the links on the landing page can be clicked.
-  componentDidMount() {
-    const layover = document.querySelector('.layover-wrapper');
-    setTimeout(() => layover.classList.add('hidden'), 3000);
-  }
+
 
   render() {  
     return (
       <div>
-        <Layover/>
       {/* UI/UX/DEV banner */}
         <Row className="hero-wrapper">
           <Col xs="12" md={{ offset: 2, span: 8 }} className="secondary-content">

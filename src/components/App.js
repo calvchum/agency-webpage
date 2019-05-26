@@ -8,6 +8,7 @@ import Contacts from './Contacts';
 import Projects from './Projects';
 import Services from './Services';
 import Burger from './Burger';
+import Layover from './Layover';
 
 class App extends Component {
   constructor() {
@@ -20,6 +21,11 @@ class App extends Component {
     this.noScroll = this.noScroll.bind(this)
   }
 
+  // Function hides the layover animation so the links on the landing page can be clicked.
+  componentDidMount() {
+    const layover = document.querySelector('.layover-wrapper');
+    setTimeout(() => layover.classList.add('hidden'), 3000);
+  }
   handleBurgerOpen() {
     this.setState({
       isBurgerOpen: !this.state.isBurgerOpen
@@ -58,6 +64,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
+          <Layover/>
           <Route path="/" render={renderHeader}/>
           <Route exact path="/" component={Landing}/>
           <Route exact path="/about" component={About}/>
