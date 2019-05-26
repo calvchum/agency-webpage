@@ -27,7 +27,7 @@ class Landing extends Component {
 
       {/* Below the fold UI UX DEV explanation*/}
 
-        <Row className="hero-wrapper">
+        <Row id="secondary-wrapper" className="hero-explanation-wrapper">
           <Col xs="12" md={{ offset: 2, span: 8 }} className="secondary-content">
 
         {/* UX DEFINITION SECTION */}
@@ -70,7 +70,7 @@ class Landing extends Component {
 
     {/* Below the fold CTA */}
         
-        <Row id="secondary-wrapper" className="secondary-wrapper">
+        <Row className="secondary-wrapper">
           <Col xs="12" md={{ offset: 3, span: 6 }} className="secondary-content">
             <p className="subheader-text landing-secondary-info">This section should be for a quick why trust us/ what who we are elevator pitch thats not cheap and salesy but honest and to the point</p>
             <Link className="view-projects-button" to="/projects">
