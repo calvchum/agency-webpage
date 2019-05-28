@@ -22,7 +22,6 @@ class Burger extends Component {
       currentPage: path
     })
   }
-
     // this.props.history.listen((location, action) => {
     //   const path = this.props.location.pathname
     //   let i = data.menuItems.findIndex((item) => item.link === path);

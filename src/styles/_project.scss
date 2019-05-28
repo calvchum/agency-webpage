@@ -1,11 +1,8 @@
 .project-wrapper {
-  height: 60vh;
+  min-height: 60vh;
 }
 .project-info {
-  position: absolute;
-  bottom: 16px;
-  left: 32px;
-  max-width: 60%;
+  max-width: 70%;
 }
 .display-none {
   opacity: 0;
@@ -18,11 +15,25 @@
 }
 .project-content-alignment {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 56px;
+  flex-direction: column;
+  justify-content: space-between;
+  & h1 {
+    padding: 24px 24px 0px 24px;
+  }
+  & .project-info {
+    padding: 0px 24px 24px 24px;
+    & .subheader-text {
+      padding: 16px 0px;
+    }
+    & p {
+      margin-bottom: 0px;
+    }
+  }
 }
-
+.tags-text {
+  font-size: 24px;
+  font-family: $header-font;
+}
 .link-wrapper {
     padding-bottom: 16px;
 }
@@ -32,5 +43,14 @@
   &:hover {
     text-decoration: none;
     color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-info {
+    max-width: 100%;
+  }
+  .tags-text {
+    font-size: 16px;
   }
 }

@@ -5,9 +5,6 @@ import Layover from './Layover';
 
 
 class Landing extends Component {
-  // Function hides the layover animation so the links on the landing page can be clicked.
-
-
   render() {  
     return (
       <div>
@@ -29,10 +26,10 @@ class Landing extends Component {
         {/* UX DEFINITION SECTION */}
 
           <Row className=" landing-term-definition">
-            <Col xs='3' md='2'>
+            <Col xs='12' md='2'>
               <h1 className="header-text">UX</h1>
             </Col>
-            <Col className="active-landing  landing-individual-term" xs='9' md='10'>
+            <Col className="active-landing  landing-individual-term" xs='12' md='10'>
               <p className="subheader-text">The User Experience involves all aspects of a users interaction with a company, its services, and its products.</p>
               <p className="body-text landing-quote">"The UX is seamless, the users prefer it this way"</p>
             </Col>
@@ -41,10 +38,10 @@ class Landing extends Component {
       {/* UI DEFINITION SECTION */}
 
           <Row className=" landing-term-definition">
-            <Col xs='3' md='2'>
+            <Col xs='12' md='2'>
               <h1 className="header-text">UI</h1>
             </Col>
-            <Col className="active-landing landing-individual-term" xs='9' md='10'>
+            <Col className="active-landing landing-individual-term" xs='12' md='10'>
               <p className="subheader-text">The User Interface is a conduit between human and computer interaction, the space where a user interacts with a computer to complete tasks.</p>
               <p className="body-text landing-quote">"That websites UI is aesthetically pleasing."</p>
             </Col>
@@ -53,10 +50,10 @@ class Landing extends Component {
       {/* DEV DEFINITION SECTION */}
 
           <Row className=" landing-term-definition">
-            <Col xs='3' md='2'>
+            <Col xs='12' md='2'>
               <h1 className="header-text">Dev</h1>
             </Col>
-            <Col className="active-landing landing-individual-term" xs='9' md='10'>
+            <Col className="active-landing landing-individual-term" xs='12' md='10'>
               <p className="subheader-text">Development is the combining of UX and UI into a functional product or service.</p>
               <p className="body-text landing-quote">"Developing is mostly googling and a lot of communication."</p>
             </Col>

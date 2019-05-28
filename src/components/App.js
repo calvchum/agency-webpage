@@ -26,6 +26,7 @@ class App extends Component {
     const layover = document.querySelector('.layover-wrapper');
     setTimeout(() => layover.classList.add('hidden'), 3000);
   }
+
   handleBurgerOpen() {
     this.setState({
       isBurgerOpen: !this.state.isBurgerOpen
@@ -36,7 +37,6 @@ class App extends Component {
   noScroll() {
     this.state.isBurgerOpen ? document.querySelector('body').classList.remove('no-scroll') : document.querySelector('body').classList.add('no-scroll');
   }
-
 
   render() {  
 
