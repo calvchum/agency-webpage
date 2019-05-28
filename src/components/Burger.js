@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import * as data from '../constants/menuItems.js';
 import { Link } from 'react-router-dom';
+import onClickOutside from 'react-onclickoutside';
 
 class Burger extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Burger extends Component {
       currentPage: ''
     }
     this.setCurrentPage = this.setCurrentPage.bind(this)
+    this.escFunction = this.escFunction.bind(this)
 
     this.props.history.listen((location, action) => {
       this.setCurrentPage(location.pathname)
@@ -16,26 +18,33 @@ class Burger extends Component {
 
   }
 
+  escFunction(event) {
+    if(event.keyCode === 27) {
+      this.props.handleBurgerClose();
+    }
+  }
+
   componentDidMount() {
     const path = this.props.location.pathname
     this.setState({
       currentPage: path
     })
+    document.addEventListener("keydown", this.escFunction, false);
   }
-    // this.props.history.listen((location, action) => {
-    //   const path = this.props.location.pathname
-    //   let i = data.menuItems.findIndex((item) => item.link === path);
-    //   let item = data.menuItems[i];
-    //   this.setState({
-    //     currentPage: item
-    //   })
-    // })
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.escFunction, false);
+  }
+
   setCurrentPage(location) {
     this.setState({
       currentPage: location
     })
   }
 
+  handleClickOutside() {
+    this.props.handleBurgerClose()
+  }
 
   render() {
     let menuLinks = data.menuItems.map((item, i) => {
@@ -58,4 +67,4 @@ class Burger extends Component {
   }
 }
 
-export default Burger;
+export default onClickOutside(Burger);
