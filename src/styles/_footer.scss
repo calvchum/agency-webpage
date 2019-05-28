@@ -39,8 +39,11 @@
   .copyright-justify-content {
     justify-content: flex-start;
     & p {
-      padding: 0px 0px 0px 48px;
+      padding: 0px 0px 0px 0px;
     }
+  }
+  .footer-content-align ul {
+    padding: 0px;
   }
   .footer-content-align {
     padding: 8px 0px;

@@ -1,22 +1,25 @@
 .hero-wrapper {
-  height: calc(100vh - 106px);
+  min-height: calc(100vh - 106px);
   background-color: $off-white;
 }
 .hero-explanation-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $grey;
 }
 
 .secondary-wrapper {
-  height: calc(100vh);
+  min-height: calc(100vh);
   background: $main;
 
 }
 .secondary-content {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
+  & h1 {
+    text-align: center;
+  }
 }
 .landing-secondary-info {
   color: $off-white;
@@ -42,8 +45,7 @@
 }
 .landing-term-definition {
   width: 100%;
-  // height: 20vh;
-  padding: 20px 0px;
+  padding: 32px 0px;
 }
 .landing-individual-term {
   display: flex;
@@ -52,16 +54,33 @@
 .landing-quote {
   display: flex;
   justify-content: flex-end;
-  
 }
 .active-landing {
+  & p:first-child {
     opacity: 0.5;
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+      color: $charcoal;
+    }
   }
 }
-
-// POTENTIALLY FIND A BETTER SOLUTION FOR THIS, currently makes the scrolling down when clicking on the down arrow smooth. Not sure the nagatives of it.. (aside from some browser incompatibility)
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    min-height: calc(100vh - 68px);
+    background-color: $off-white;
+  }
+  .landing-term-definition {
+    & h1 {
+      text-align: left;
+      border-bottom: 1px black solid;
+    }
+  }
+}
+
+
+
+

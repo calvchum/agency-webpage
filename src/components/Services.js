@@ -36,9 +36,9 @@ class Services extends Component {
 
     let displayInfo = this.state.displayInfo.map((category, i) => {
       return (
-        <div style={{background: 'white'}} className="service-display-info subheader-text">
-          <p>{category.subHeader}</p>
-          <ul key={i}>
+        <div style={{background: 'white'}} className="service-display-info">
+          <p className='subheader-text'>{category.subHeader}</p>
+          <ul className='body-text' key={i}>
             {category.listItems.map((listItem, i) => {
               return (
                 <li key={i}>{listItem}</li>

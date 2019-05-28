@@ -1,85 +1,64 @@
 export const servicesData = [
 	{
-    header: 'UX',
+    header: 'Services',
     category: [
       {
-      subHeader: 'Briefing',
-      listItems: ['User Interviews', 'Group classes', 'Brain storming']
+      subHeader: 'Design',
+      listItems: ['User Experience Design', 'User Interface', 'User Exploration']
       },
       {
-        subHeader: 'Research',
-        listItems: ['Asking a mate', 'Google']
+        subHeader: 'Development',
+        listItems: ['Responsive Website Design', 'E-commerce']
       },
       {
-        subHeader: 'Synethesize',
-        listItems: ['Chemistry', 'Bunsen burner']
+        subHeader: 'Maintenance ',
+        listItems: ['Maintaining Websites']
       },
       {
-        subHeader: 'Deliverables',
-        listItems: ['Deadlines', 'KPI']
+        subHeader: 'Other ',
+        listItems: ['Other stuff']
       }
     ]
 	},
   {
-    header: 'UI',
+    header: 'Process',
     category: [
       {
-      subHeader: 'Dribble',
-      listItems: ['Google images', 'Stealing', 'Plagarism']
+      subHeader: 'Brief',
+      listItems: ["Understand the clients business goals and the users they're working with"]
       },
       {
-        subHeader: 'Codepen',
-        listItems: ['nice style', 'Copy paste']
+        subHeader: 'Research',
+        listItems: ['Primary research such as user interviews, shadowing and card sorting, depending on the project', 'Secondary research']
       },
       {
-        subHeader: 'Coolors',
-        listItems: ['Blue', 'Red']
+        subHeader: 'Refine',
+        listItems: ['We then take the clients business goals, relay our research findings and identify a plan of action']
       },
       {
-        subHeader: 'Colormind',
-        listItems: ['Orange', 'Purple']
+        subHeader: 'Design',
+        listItems: ["The design process starts. LO-FI wireframes are communicated with the client to make sure we're all on the same page", "Once the project layout is agreed upon we design the HI-FI wireframes and tweak until consenus is reached."]
+      },
+      {
+        subHeader: 'Develop',
+        listItems: ['Using the HI-FI wireframes, we build and deploy the product']
+      },
+      {
+        subHeader: 'Maintain',
+        listItems: ['After the build is live we offer training and support on how to use it, and to make sure everything is running as expected.']
       }
     ]
-  },
-  {
-    header: 'Development',
-    category: [
-      {
-      subHeader: 'Coding',
-      listItems: ['error', 'debugging', 'frustration']
-      },
-      {
-        subHeader: 'React',
-        listItems: ['react-router-dom', 'redux']
-      },
-      {
-        subHeader: 'Node',
-        listItems: ['Express.js', 'Passport.js']
-      },
-      {
-        subHeader: 'Maintenance',
-        listItems: ['$40/month', '24/7 hotline']
-      }
-    ]    
   },
   {
     header: 'Tools',
     category: [
       {
-      subHeader: 'Slack',
-      listItems: ['#australia', '#lewagon', '#harrisonKim']
+      subHeader: 'Code',
+      listItems: ['React.js', 'Redux', 'others']
       },
       {
-        subHeader: 'Whatsapp',
-        listItems: ['call me maybe', 'hi baby']
-      },
-      {
-        subHeader: 'Macbook',
-        listItems: ['2013 retina', '15 inches ;) ;) ;) ;)']
-      },
-      {
-        subHeader: 'Internet',
-        listItems: ['56k', 'dialup']
+        subHeader: 'Design',
+        listItems: ['Figma', 'Principle', 'Adobe Illustrator']
       }
     ]
   },
