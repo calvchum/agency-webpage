@@ -18,6 +18,7 @@ class App extends Component {
     }
 
     this.handleBurgerOpen = this.handleBurgerOpen.bind(this)
+    this.handleBurgerClose = this.handleBurgerClose.bind(this)
     this.noScroll = this.noScroll.bind(this)
   }
 
@@ -34,6 +35,12 @@ class App extends Component {
     this.noScroll()
   }
 
+  handleBurgerClose() {
+    this.setState({
+      isBurgerOpen: false
+    })
+  }
+
   noScroll() {
     this.state.isBurgerOpen ? document.querySelector('body').classList.remove('no-scroll') : document.querySelector('body').classList.add('no-scroll');
   }
@@ -44,6 +51,7 @@ class App extends Component {
       return (
         <Header
           handleBurgerOpen={this.handleBurgerOpen}
+          handleBurgerClose={this.handleBurgerClose}
           isBurgerOpen={this.state.isBurgerOpen}
           {...props}
         />
