@@ -8,9 +8,7 @@
   justify-content: space-between;
   padding-left: 24px;
 }
-.about-member-info {
 
-}
 .about-member-link {
   display: flex;
   justify-content: flex-end;
@@ -23,7 +21,46 @@
     }
   }
 }
+.about-description {
+  padding: 10px 0px;
+}
+.border-bottom {
+  border-bottom: 1px black solid;
+  padding: 16px 0px;
+  margin-bottom: 16px;
+}
+.about-image img {
+  width: 200px;
+  height: 200px;
+}
 
 .capitalize {
   text-transform: capitalize;
+}
+
+@media (max-width: 468px) {
+  .about-member {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-member-wrapper {
+    padding-left: 0px;
+  }
+  .about-member-link {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 24px;
+  }
+  .about-member-info {
+    padding: 24px 0px 16px 0px;
+  }
+  .about-image {
+    display: flex;
+    justify-content: center;
+    & img {
+      width: 150px;
+      height: 150px;
+    }
+
+  }
 }

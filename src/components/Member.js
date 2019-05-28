@@ -7,15 +7,15 @@ class Member extends Component {
     return (
       <Row>
         <Col className="about-member" xs="12" md={{ offset: 1, span: 10 }} lg={{ offset: 2, span: 8 }}>
-          <div className="">
-            <img src={img} height="200px" width="200px" alt={`${name}'s mug`}/> 
+          <div className="about-image">
+            <img src={img} alt={`${name}'s mug`}/> 
           </div>
           <div className="about-member-wrapper">
             <div className="about-member-info">
               <h1 className="capitalize subheader-text">
                 {name} / {title}
               </h1>
-              <p className="body-text">
+              <p className="body-text about-description">
                 {desc}
               </p>
             </div>

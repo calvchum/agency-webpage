@@ -19,8 +19,12 @@ class About extends Component {
       <div className="min-height-wrapper">
         <Row>
           <Col xs="12" md={{ offset: 1, span: 10 }} lg={{ offset: 2, span: 8 }}>
-            <h1 className="page-header subheader-text">
+            <h1 className="border-bottom subheader-text">
               About
+            </h1>            
+            <p className="body-text">Agency Name evolved from two friends who enjoyed building side projects together decided to make it official. We are both bootcamp graduates who decided to carve our own path. We enjoy the allure of building exciting products that pushes humanity forward. We work well togeth because we understand the limits of our responsibility, but still demand good logic for all decisions any team member makes. </p>
+            <h1 className=" border-bottom subheader-text">
+              Team
             </h1>
           </Col>
         </Row>

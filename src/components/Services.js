@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import * as data from '../constants/servicesInfo';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 class Services extends Component {
   constructor() {
     super();
@@ -36,7 +35,7 @@ class Services extends Component {
 
     let displayInfo = this.state.displayInfo.map((category, i) => {
       return (
-        <div style={{background: 'white'}} className="service-display-info">
+        <div className="service-display-info">
           <p className='subheader-text'>{category.subHeader}</p>
           <ul className='body-text' key={i}>
             {category.listItems.map((listItem, i) => {
@@ -57,18 +56,16 @@ class Services extends Component {
             Services</h1>
           </Col>
         </Row>
-        <div className="">
-        </div>
         <Row className=""> 
-          <Col xs='12' md={{ offset: 1, span: 10 }}>
+          <Col className="box-shadow " xs='12' md={{ offset: 1, span: 10 }}>
             <div className="service-header">
               {services}
             </div>
           </Col>
         </Row> 
         <Row>
-          <Col className=" service-display-info-wrapper" xs='12' md={{ offset: 1, span: 10 }}>
-              {displayInfo}
+          <Col style={{background: 'white'}} className="box-shadow service-display-info-wrapper" xs='12' md={{ offset: 1, span: 10 }}>
+                {displayInfo}
           </Col>
         </Row>  
       </div>
