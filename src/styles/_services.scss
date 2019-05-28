@@ -2,7 +2,7 @@
   display: flex;
 }
 .service-header-button {
-  width: 25%;
+  width: 33.33%;
   background: $off-white;
   border: none;
   padding: 16px 0px;
@@ -20,12 +20,22 @@
 .service-display-info-wrapper {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 24px;   
+  margin-bottom: 40px;   
 }
 .service-display-info {
   width: 50%;
-  padding: 32px;
+  padding: 24px 24px 24px 24px;
 }
 .background {
   background-color: $off-white;
+}
+
+@media (max-width: 568px) {
+  .service-display-info {
+    width: 100%;
+    padding: 16px 16px 0px 16px;
+    &:last-child {
+      padding-bottom: 16px;
+    }
+  }
 }

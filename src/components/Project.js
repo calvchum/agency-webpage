@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 class Project extends Component {
   render() {  
     const { name, img, desc, tag, medium } = this.props.project
@@ -27,7 +26,7 @@ class Project extends Component {
                 <h1 className="header-text">{name}</h1>
               </div>
               <div className="project-info">
-                <p className="subheader-text">{tags}</p>
+                <p className="tags-text">{tags}</p>
                 <p className="body-text">{desc}</p>
               </div>
             </Col>
