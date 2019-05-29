@@ -31,10 +31,9 @@
 @media (max-width: 568px) {
   .header-positioning {
     display: none;
-    // position: fixed;
   }
   .header-container {
     background: $off-white;
-    // top: 0px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
   }
 }

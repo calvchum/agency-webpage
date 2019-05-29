@@ -57,14 +57,14 @@ class Services extends Component {
           </Col>
         </Row>
         <Row className=""> 
-          <Col className="box-shadow " xs='12' md={{ offset: 1, span: 10 }}>
+          <Col className="" xs='12' md={{ offset: 1, span: 10 }}>
             <div className="service-header">
               {services}
             </div>
           </Col>
         </Row> 
         <Row>
-          <Col style={{background: 'white'}} className="box-shadow service-display-info-wrapper" xs='12' md={{ offset: 1, span: 10 }}>
+          <Col style={{background: 'white', zIndex: 0}} className="box-shadow service-display-info-wrapper" xs='12' md={{ offset: 1, span: 10 }}>
                 {displayInfo}
           </Col>
         </Row>  
