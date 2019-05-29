@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Layover from './Layover';
+import Projects from './Projects';
 
 
 class Landing extends Component {
@@ -14,7 +15,7 @@ class Landing extends Component {
           <h1 className="header-text">
           UX / UI / Development
           </h1>
-          <a href="#secondary-wrapper" className="next-page bounce"><img src={ require('../assets/down-arrow.svg') } alt="downward point arrow"/></a>
+          <a href="#secondary-wrapper" className="next-page bounce"><img src={ require('../assets/down-line-arrow.svg') } alt="downward point arrow"/></a>
           </Col>
         </Row>  
 
@@ -62,15 +63,7 @@ class Landing extends Component {
         </Row>
 
     {/* Below the fold CTA */}
-        
-        <Row className="secondary-wrapper">
-          <Col xs="12" md={{ offset: 3, span: 6 }} className="secondary-content">
-            <p className="subheader-text landing-secondary-info">This section should be for a quick why trust us/ what who we are elevator pitch thats not cheap and salesy but honest and to the point</p>
-            <Link className="view-projects-button" to="/projects">
-              <a className="subheader-text">View Projects</a>
-            </Link>
-          </Col>
-        </Row>
+        <Projects />
       </div>
     );
   }
