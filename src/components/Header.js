@@ -5,11 +5,16 @@ import MediaIcons from './MediaIcons';
 
 class Header extends Component {
   render() {  
+
+    const inactiveButton = <button id="hamburger-menu-icon" className='' onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
+
+    const activeButton = <button id="hamburger-menu-icon" className='active' onClick={this.props.handleBurgerClose}><span></span><span></span></button>
+
     return (
       <Row>
         <MediaIcons/>
         <Col className='header-container'>
-          <button id="hamburger-menu-icon" className={this.props.isBurgerOpen ? 'active' : ''} onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
+          {this.props.isBurgerOpen ? activeButton : inactiveButton}
           <div className="header-positioning">
             <Link style={{textDecoration: 'none', color: 'white'}} to='/'> 
               <p className="header-text">dark green</p>

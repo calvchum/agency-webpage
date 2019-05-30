@@ -25,7 +25,7 @@ class App extends Component {
   // Function hides the layover animation so the links on the landing page can be clicked.
   componentDidMount() {
     const layover = document.querySelector('.layover-wrapper');
-    setTimeout(() => layover.classList.add('hidden'), 3000);
+    setTimeout(() => layover.classList.add('hidden'), 1000);
   }
 
   handleBurgerOpen() {
