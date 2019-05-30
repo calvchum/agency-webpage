@@ -28,10 +28,20 @@
 } 
 
 // BURGER MENU ACTIVE
-#hamburger-menu-icon.active {
-  background: $off-white;
+#hamburger-menu-icon-active {
+  position: fixed;
+  z-index: 1;
+  width: 102px;
+  height: 102px;
+  border: none;
+  outline: none;
   & span {
     background: $charcoal;
+    position: absolute;
+    margin: 10px;
+    height: 3px;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
   }
   & span:nth-child(1) {
     width: 32px;
@@ -46,8 +56,6 @@
     left: 24px;
   } 
 }
-
-
 
 // TRANSITIONS AND STYLING OF BURGER MENU 
 .burger-slide-out {
@@ -153,7 +161,15 @@
     left: 0;
     height: calc(100vh - 68px);
   }
-  #hamburger-menu-icon.active {
+  #hamburger-menu-icon-active {
+    position: fixed;
+    z-index: 1;
+    width: 67px;
+    height: 67px;
+    border: none;
+    outline: none;
+    top: 1px;
+    left: 1px;
     background: $off-white;
     & span {
       background: $charcoal;
