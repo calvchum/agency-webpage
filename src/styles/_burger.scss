@@ -30,13 +30,14 @@
 // BURGER MENU ACTIVE
 #hamburger-menu-icon-active {
   position: fixed;
+  background: $accent;
   z-index: 1;
   width: 102px;
   height: 102px;
   border: none;
   outline: none;
   & span {
-    background: $charcoal;
+    background: white;
     position: absolute;
     margin: 10px;
     height: 3px;

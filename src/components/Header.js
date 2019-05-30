@@ -8,7 +8,7 @@ class Header extends Component {
 
     const inactiveButton = <button id="hamburger-menu-icon" onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
 
-    const activeButton = <button id="hamburger-menu-icon-active" onClick={this.props.handleBurgerClose}><span></span><span></span></button>
+    const activeButton = <div id="hamburger-menu-icon-active" ><span></span><span></span></div>
 
     return (
       <Row>
