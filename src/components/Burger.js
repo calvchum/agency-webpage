@@ -50,7 +50,7 @@ class Burger extends Component {
     let menuLinks = data.menuItems.map((item, i) => {
       return (
         <Link to={item.link} key={i} className={`${item.link === this.state.currentPage ? 'burger-menu-highlighted': 'burger-menu-links'}`}>
-          <li className='test' key={i} onClick={this.props.handleBurgerOpen}><div className="active-rectangle"></div>{item.title}</li>
+          <li className='test' key={i} onClick={this.props.handleBurgerClose}><div className="active-rectangle"></div>{item.title}</li>
         </Link>
       )
     })

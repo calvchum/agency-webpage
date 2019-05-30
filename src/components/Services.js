@@ -52,7 +52,7 @@ class Services extends Component {
       <div className="background">
         <Row>
           <Col className="page-header" xs='12' md={{ offset: 1, span: 10 }}>
-            <h1 className="subheader-text">
+            <h1 className="subheader-text border-bottom">
             Services</h1>
           </Col>
         </Row>

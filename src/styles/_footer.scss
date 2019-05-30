@@ -1,6 +1,6 @@
 .footer-container {
-  min-height: 88px;
-  background: $grey;
+  min-height: 200px;
+  background: $charcoal;
   padding: 24px 0px;
 }
 
@@ -13,7 +13,7 @@
 .footer-content-align {
   display: flex;
   align-items: center;
-  color: $charcoal;
+  color: $off-white;
 }
 .copyright-justify-content {
   justify-content: flex-end;
@@ -26,9 +26,10 @@
 .footer-link-item {
   text-decoration: none !important;
   display: flex;
-  color: #000000;
+  color: $off-white;
   &:hover {
-    color: $charcoal;
+    color: $off-white;
+    transform: scale(1.05);
   }
   & div {
     padding: 0px 8px;

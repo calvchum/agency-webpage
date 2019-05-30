@@ -5,6 +5,12 @@ class Contacts extends Component {
   render() {  
     return (
       <div className="min-height-wrapper">
+        <Row>
+          <Col className="page-header" xs='12' md={{ offset: 1, span: 10 }}>
+            <h1 className="subheader-text border-bottom">
+            Contact</h1>
+          </Col>
+        </Row>
         <Row className="contact-details-wrapper">
           <Col className="contact-location" xs="12" md={{ offset: 1, span: 10 }}>
           <div>

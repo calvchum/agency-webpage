@@ -38,7 +38,7 @@ class Footer extends Component {
           </Col>
     {/* COPYRIGHT */}
           <Col className="footer-content-align copyright-justify-content" xs="12" md="6" lg="6">
-            <p className="body-text ">Copyright 2019 Dark Green Design</p>
+            <p className="body-text ">© 2019 Dark Green Design</p>
           </Col>
         </Row>
     );
