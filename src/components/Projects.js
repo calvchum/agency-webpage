@@ -23,7 +23,7 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs='12' md={{ offset: 1, span: 10 }}>
+          <Col style={{paddingBottom: '24px'}} xs='12' md={{ offset: 1, span: 10 }}>
             {projects}       
           </Col>
         </Row>
