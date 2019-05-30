@@ -7,6 +7,8 @@
   background: $accent;
   border: none;
   outline: none;
+transition: transform 200ms ease-in-out;
+
 }
 #hamburger-menu-icon span {
   position: absolute;
@@ -14,7 +16,8 @@
   height: 3px;
   background: $grey;
   transform: rotate(0deg);
-  transition: .2s ease-in-out;
+
+    transition: transform 200ms ease-in-out;
 }
 #hamburger-menu-icon span:nth-child(1) {
   width: 56px;
@@ -30,19 +33,19 @@
 // BURGER MENU ACTIVE
 #hamburger-menu-icon-active {
   position: fixed;
-  background: $accent;
+  background: $off-white;
   z-index: 1;
   width: 102px;
   height: 102px;
   border: none;
   outline: none;
-  & span {
-    background: white;
+  transition: transform 1000ms ease-in-out;  
+& span {
+    background: $charcoal;
     position: absolute;
     margin: 10px;
     height: 3px;
     transform: rotate(0deg);
-    transition: .2s ease-in-out;
   }
   & span:nth-child(1) {
     width: 32px;
@@ -97,13 +100,15 @@
 }
 .burger-open {
   transform: translateX(0);
+  transition: transform 200ms ease-in-out;
+
 }
 .burger-close {
   height: calc(100vh - 102px);
   color: #999;
   border: none;
   background: $off-white;
-  transition: transform 100ms ease;
+  transition: transform 200ms ease-in-out;
   cursor: pointer;
 }
 // STYLING FOR THE ACTIVE LINK 
