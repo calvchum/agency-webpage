@@ -16,10 +16,10 @@ class App extends Component {
     this.state = {
       isBurgerOpen: false,
     }
-
     this.handleBurgerOpen = this.handleBurgerOpen.bind(this)
     this.handleBurgerClose = this.handleBurgerClose.bind(this)
     this.noScroll = this.noScroll.bind(this)
+
   }
 
   // Function hides the layover animation so the links on the landing page can be clicked.
@@ -30,15 +30,17 @@ class App extends Component {
 
   handleBurgerOpen() {
     this.setState({
-      isBurgerOpen: !this.state.isBurgerOpen
+      isBurgerOpen: true
     })
-    this.noScroll()
+    document.querySelector('body').classList.add('no-scroll');
+    
   }
 
   handleBurgerClose() {
     this.setState({
       isBurgerOpen: false
     })
+    document.querySelector('body').classList.remove('no-scroll');
   }
 
   noScroll() {
