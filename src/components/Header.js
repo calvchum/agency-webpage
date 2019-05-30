@@ -6,9 +6,9 @@ import MediaIcons from './MediaIcons';
 class Header extends Component {
   render() {  
 
-    const inactiveButton = <button id="hamburger-menu-icon" className='' onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
+    const inactiveButton = <button id="hamburger-menu-icon" onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
 
-    const activeButton = <button id="hamburger-menu-icon" className='active' onClick={this.props.handleBurgerClose}><span></span><span></span></button>
+    const activeButton = <button id="hamburger-menu-icon-active" onClick={this.props.handleBurgerClose}><span></span><span></span></button>
 
     return (
       <Row>
