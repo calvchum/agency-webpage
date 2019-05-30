@@ -12,7 +12,7 @@ class Header extends Component {
           <button id="hamburger-menu-icon" className={this.props.isBurgerOpen ? 'active' : ''} onClick={this.props.handleBurgerOpen}><span></span><span></span></button>
           <div className="header-positioning">
             <Link style={{textDecoration: 'none', color: 'white'}} to='/'> 
-              <p className="header-text">agency name.</p>
+              <p className="header-text">dark green</p>
             </Link>
           </div>
         </Col>
