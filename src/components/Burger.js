@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import * as data from '../constants/menuItems.js';
 import { Link } from 'react-router-dom';
 import onClickOutside from 'react-onclickoutside';
+import MediaIcons from './MediaIcons';
 
 class Burger extends Component {
   constructor(props) {
@@ -62,6 +63,7 @@ class Burger extends Component {
             {menuLinks}
           </ul>
         </div>
+          <MediaIcons/>
       </div>
     )
   }
