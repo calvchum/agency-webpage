@@ -12,7 +12,6 @@ class Header extends Component {
 
     return (
       <Row>
-        <MediaIcons/>
         <Col className='header-container'>
           {this.props.isBurgerOpen ? activeButton : inactiveButton}
           <div className="header-positioning">

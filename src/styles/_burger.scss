@@ -74,7 +74,7 @@ transition: transform 200ms ease-in-out;
   flex-direction: column;
   transform: translateX(-110%);
   transition: transform 0.15s ease-in-out;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 0px 20px -18px rgba(0, 0, 0, 0.25);
 }
 .burger-menu-links-wrapper {
   padding: 48px 0px 0px 48px;
@@ -139,8 +139,8 @@ transition: transform 200ms ease-in-out;
     background: $accent;
     border: none;
     outline: none;
-    top: 1px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
   }
     #hamburger-menu-icon span {
     position: absolute;
@@ -170,12 +170,12 @@ transition: transform 200ms ease-in-out;
   #hamburger-menu-icon-active {
     position: fixed;
     z-index: 1;
-    width: 67px;
-    height: 67px;
+    width: 68px;
+    height: 68px;
     border: none;
     outline: none;
-    top: 1px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
     background: $off-white;
     & span {
       background: $charcoal;
@@ -183,14 +183,14 @@ transition: transform 200ms ease-in-out;
     & span:nth-child(1) {
       width: 24px;
       transform: rotate(45deg);
-      top: 16px;
-      left: 4px;
+      top: 26px;
+      left: 9px;
     } 
     & span:nth-child(2) {
       width: 24px;
       transform: rotate(-45deg);
-      top: 16px;
-      left: 4px;
+      top: 26px;
+      left: 9px;
     } 
   }
 }
