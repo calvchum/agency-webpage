@@ -16,11 +16,11 @@ export const projectData = [
   {
     name: "Ecze",
     img: "https://i.ibb.co/0KZ4pgc/ecze-screenshot-1.png",
-    desc: "This project taught us the power of love",
-    tag: ["UI", "React", "Node", "UX"],
+    desc: "Designed and built from scratch with extensive client consultation",
+    tag: ["UI", "React", "Gatsby", "UX", "GraphQL"],
     medium: {
       backend: "",
-      frontend: ""
+      frontend: "https://calvincheung.cc/projects/ecze"
     }
   }
 ];
